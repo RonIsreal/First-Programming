@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<title>A More Complex Form with JavaScript Validation</title>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <script>
+ 	var arr = [];
+ 	for (i = 0;i<100;i++) {
+ 		arr[i] = String(i);
+ 	}
+  $( function() {
+    var availableTags = [
+    
+    ];
+    $( "#age" ).autocomplete({
+      source: arr
+    });
+  } );
+  </script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<form name="contact_form" method="post" action="/cgi-bin/articles/development/javascript/form-validation-with-javascript/contact_complex.cgi" onSubmit="validate_form( );">
+
+<h1>Please Enter Your Details Below</h1>
+
+<p>Your Name: <input type="text" name="contact_name"></p>
+
+<p>Your Gender: <input type="radio" name="gender" value="Male"> Male
+&nbsp; <input type="radio" name="gender" value="Female"> Female</p>
+
+<div class="ui-widget">
+  <label for="age">Your Age:</label>
+  <input id="age">
+</div>
+
+<p>Do you agree to the Terms and Conditions?
+<input type="checkbox" name="terms" value="Yes"> Yes
+
+<p><input type="submit" name="send" value="Send Details"></p>
+
+</form>
+
+<script src="validate.js"></script>
+</body>
+
+</html>

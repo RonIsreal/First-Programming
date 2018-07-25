@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+<?php
+
+// Exercise 1: HTML is Hypertext MarkUp Language, which is a language used to build websites using tags. PHP is HyperText Processor, which is a language that used to create dynamic webpages inside the HTML. While HTML is a Client Side language, PHP is a Server Side language and most of the information in it are pertinent to the server, therefore it isn't processed on the user's computer, rather on the server side through requests.
+
+//Exercise 2: 
+
+$addressNumber = 67;
+$addressStreet = 'Herzl St.';
+$country = 'Israel';
+$globalAddress = "I live in ".$addressStreet.", ".$addressNumber." in ".$country"."
+echo $globalAddress;
+
+echo "In ".$country." many streets have the same name! For example, ".$addressStreet." can be found in Tel Aviv and Ramat Gan!";
+
+//Exercise 3:
+
+$pets = ['cat', 'dog', 'fish', 'rabbit', 'cow'];
+
+echo $pets[2];
+
+//Exercises 4 and 5:
+
+$myAddress = [
+
+"country" => $country,
+"city" => "Ramat Gan",
+"street" => $addressStreet,
+"streetNumber" => $addressNumber,
+"favouriteFood" => ["strogonoff", "cheeseburger", "chocolate"]
+]; 
+
+//Exercise 6:
+
+echo $myAddress[4]["favouriteFood"]
+
+echo "Ronny lives in ".$myAddress[1]["city"]." on ".$myAddress[2]["street"].", ".$myAddress[3]["streetNumber"]." - ".$myAddress[0]["country"].". <br> His favourite foods are: ".$myAddress[4]["favouriteFood"].".";
+
+?>
+
+

@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'monofonto'; /*a name to be used later*/
+    src: url('file:///C:/Users/Ronny/Desktop/Programming%20Stuff/monofonto.ttf'); /*URL to font*/
+}
+html {
+	font-size:1.1em;
+	color: #63D978
+
+
+}
+p.thicker {
+    font-weight: lighter;
+}
+body {
+    background-image: url("file:///C:/Users/Ronny/Desktop/Programming%20Stuff/tvfallout3.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    font-family: monofonto;
+}
+#table{
+	border-style:dotted;
+	border-radius: 3px;
+
+}
+/*#Usage{
+	font-family: Arial, Arial Black, Verdana, Times New Roman;
+}*/
+a:visited {
+	color:#E6E6FA;
+	}
+a:hover {
+	font-weight: bold;
+	font-color: yellow;
+	}
+
+@media only screen and (max-width: 750px) {
+	body {
+	background-image: url("file:///C:/Users/Ronny/Desktop/Programming%20Stuff/101-Best-fallout-4-wallpapers-Latest-HD-Wallpapers-37-577x1024.jpg");
+	background-repeat: repeat;
+	background-size: cover;
+    background-position: right-fixed;
+    background-attachment: fixed;
+	}
+	p::before {
+		content: "Mobile Optimized";
+	}
+}
+

@@ -1,0 +1,99 @@
+@font-face {
+	font-family: 'Raleway-Regular';
+	src: url('file:///C:/Users/Ronny/Desktop/Programming%20Stuff/Raleway-Regular.ttf');
+}
+
+body, html {
+	font-size: 1.1em;
+	color:#808080;
+}
+.taimg1, .taimg2, .taimg3, .taimg4, .taimg5, .taimg6, .taimg7 {
+	position: relative;
+	opacity: 0.9;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.taimg1 {
+	background-image: url(file:///C:/Users/Ronny/Desktop/Programming%20Stuff/Tel%20Aviv%20Images/Tel-Aviv-City-2050x1200.jpg);
+	min-height: 620px;
+}
+
+.taimg2 {
+	background-image: url(file:///C:/Users/Ronny/Desktop/Programming%20Stuff/Tel%20Aviv%20Images/TelAvivBeach.jpg);
+	min-height: 620px;
+	align-content: left;
+}
+
+.taimg3 {
+	background-image: url()
+}
+
+.taimg4 {
+	background-image: url()
+}
+
+.taimg5 {
+	background-image: url()
+}
+
+.taimg6 {
+	background-image: url()
+}
+
+.taimg7 {
+	background-image: url()
+}
+
+.caption {
+	position:absolute;
+ 	top:50%;
+ 	width:100%;
+ 	text-align:center;
+ 	color:#000;
+ 	font-size:27px;
+ 	letter-spacing:8px;
+ 	text-transform:uppercase;
+ 	opacity: 0.7;
+ 	font-family: 'Raleway-Regular'
+
+}
+
+.border {
+ 	background-color:#111;
+ 	color:#f4f4f4;
+ 	padding:20px;
+ 	font-family: 'Raleway-Regular';
+ 	animation: flipInX;
+ 	backface-visibility: visible !important;
+    animation-name: flipInX;
+ }
+
+ @keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
